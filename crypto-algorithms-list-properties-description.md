@@ -30,4 +30,4 @@
    * Asymmetric-key algorithms, commonly known as public-key algorithms, use two related keys (i.e., a key pair) to perform their functions: a public key and a private key. The public key may be known by anyone; the private key should be under the sole control of the entity that “owns” the key pair. Even though the public and private keys of a key pair are related, knowledge of the public key cannot be used to determine the private key.
 * Values: "Cryptographic-Hash-Function" , "Symetric-Key-Algorithm" or "Asymmetric-Key-Algorithm"
 
-Note: the subclasses has been added to to cryptoClass attribute, separated by a "/" character. This specific point is WIP.
+Note: the subclasses has been added to the cryptoClass property, separated by a "/" character from the class. This specific way to structure the subclasses is WIP.

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC0-1.0
 id: ecdh
 name: Elliptic-Curve Diffie-Hellman
-cryptoClass: Asymmetric-Key-Algorithm/Key-Exchange
+cryptoClass: Asymmetric-Key-Algorithm/Key-Exchange-Mechanism
 commonkeySize: '128'
 specifiedkeySize: '256'TO'521'

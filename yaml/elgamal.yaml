@@ -5,3 +5,5 @@ name: ElGamal Encryption System
 cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '4096'}
+reference:
+  - https://caislab.kaist.ac.kr/lecture/2010/spring/cs548/basic/B02.pdf

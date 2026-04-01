@@ -5,3 +5,5 @@ name: Elliptic-Curve Diffie-Hellman
 cryptoClass: Asymmetric-Key-Algorithm/Key-Exchange-Mechanism
 commonkeySize: '128'
 specifiedkeySize: {min: '256', max: '521'}
+reference:
+  - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar3.pdf

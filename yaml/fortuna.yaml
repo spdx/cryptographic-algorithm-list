@@ -3,3 +3,5 @@ id: fortuna
 name: Fortuna Random Number Generator
 cryptoClass: Symmetric-Key-Algorithm/Random-Number-Generator
 commonkeySize: '64'
+reference:
+  - https://www.schneier.com/academic/fortuna/

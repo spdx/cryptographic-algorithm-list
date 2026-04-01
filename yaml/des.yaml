@@ -5,3 +5,6 @@ name: Data Encryption Standard
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '168'
 specifiedkeySize: '56'
+reference:
+  - https://csrc.nist.gov/pubs/fips/46-3/final
+  - https://web.archive.org/web/20140226205104/http://origin-www.computer.org/csdl/mags/co/1977/06/01646525.pdf

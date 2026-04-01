@@ -4,3 +4,7 @@ oid: 1.2.643.2.2.21
 name: GOST Block Cipher
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '64'
+reference:
+  - https://doi.org/10.17487/RFC8891
+  - https://www.rfc-editor.org/info/rfc7801
+  - https://www.rfc-editor.org/info/rfc5830

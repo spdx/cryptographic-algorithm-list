@@ -5,3 +5,6 @@ name: Digital Signature Algorithm
 cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '3072'}
+reference:
+  - https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf
+  - https://web.archive.org/web/20131213131144/http://www.itl.nist.gov/fipspubs/fip186.htm#FIPS_TOP

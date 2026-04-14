@@ -10,18 +10,44 @@ reference:
   - https://doi.org/10.6028/NIST.SP.800-38A
   - https://www.iso.org/standard/81564.html
 parameters:
-     {  name: "keyLength"
-        type: "integer"
-        Summary: Key size in bits
-        Description: 	Specifies the key size in bits
-        }
-       ,
-       { name: "mode"
-        Summary: 	Block cipher mode of operation
-        Description: 	Defines how a block cipher is applied to a message longer than one block. Mode choice determines confidentiality properties, parallelism, and whether authentication is provided.
-        type: "enumeration"
-        values:
-          [ "GCM", "CCM", "CBC" , "CTR",  "OFB", "CFB", "CFB128", "CFB1", "CFB8", "XTS", "SIV", "GCM-SIV", "EAX", "OCB", "CTS", "CWC", "IAPM", "LRW", "XEX",
-           "CMC", "EME", "HCTR2",  "CMAC",  "GMAC", "PCBC",  "ECB", "CTR-HMAC-SHA1",  "Wrap",  "XCBC_MAC", "XCBC_MAC_96"]
-}
+  - name: "keyLength"
+    type: "integer"
+    Summary: Key size in bits
+    Description: Specifies the key size in bits
+  - name: "mode"
+    Summary: Block cipher mode of operation
+    Description: Defines how a block cipher is applied to a message longer than one block. 
+      Mode choice determines confidentiality properties, parallelism, and whether authentication is provided.
+    type: "enumeration"
+    values:
+      - GCM
+      - CCM
+      - CBC
+      - CTR
+      - OFB
+      - CFB
+      - CFB128
+      - CFB1
+      - CFB8
+      - XTS
+      - SIV
+      - GCM-SIV
+      - EAX
+      - OCB
+      - CTS
+      - CWC
+      - IAPM
+      - LRW
+      - XEX
+      - CMC
+      - EME
+      - HCTR2
+      - CMAC
+      - GMAC
+      - PCBC
+      - ECB
+      - CTR-HMAC-SHA1
+      - Wrap
+      - XCBC_MAC
+      - XCBC_MAC_96
           

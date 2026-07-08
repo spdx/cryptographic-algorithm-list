@@ -14,4 +14,4 @@ parameters:
   keyLength: [128, 192, 256]
   nonce_length: { min: '1', max: '2305843009213693951' }
   tagLength: { min: '4', max: '16' }
-  padding: ["PKCS7", "ISO10126" ,"ANSI_X9.23" , "ISO7816_4"  ,"NONE" ]
+  padding: ["PKCS7", "ISO10126" ,"ANSI_X9.23" , "ISO7816_4"  ,"NONE"]

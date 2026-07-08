@@ -1,6 +1,0 @@
-# SPDX-License-Identifier: CC0-1.0
-id: CMAC
-oid: 1.2.840.113549.1.9.16.3.25
-name: Cipher-based Message Authentication Code
-cryptoClass: Cryptographic-Hash-Function/Message-Authentication-Code
-commonkeySize: '128'

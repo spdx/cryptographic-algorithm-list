@@ -3,3 +3,6 @@ id: cmea
 name: Cellular Message Encryption Algorithm
 cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
 commonkeySize: '64'
+reference:
+  - https://www.schneier.com/wp-content/uploads/2016/02/paper-cmea.pdf
+  - https://link.springer.com/content/pdf/10.1007/BFb0052260.pdf

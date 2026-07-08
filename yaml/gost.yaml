@@ -1,6 +1,0 @@
-# SPDX-License-Identifier: CC0-1.0
-id: gost
-oid: 1.2.643.2.2.21
-name: GOST Block Cipher
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
-commonkeySize: '64'

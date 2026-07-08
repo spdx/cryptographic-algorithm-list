@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
 id: pbes2
 name: Password-Based Encryption Scheme 2
-cryptoClass: Symmetric-Key-Algorithm/Key-Derivation
+cryptoClass: Key-Derivation-Function
 commonkeySize: '256'

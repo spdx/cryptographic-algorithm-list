@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: CC0-1.0
+id: gostr3412-2015
+oid: 1.2.643.7.1.1.5.1
+name: Magma
+cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+commonkeySize: '64'
+specifiedkeySize: '256'
+reference:
+  - https://doi.org/10.17487/RFC8891

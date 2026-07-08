@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
-id: 'argon2'
+id: argon2
 oid: 
-name: 'Argon2'
-cryptoClass: 'Key-Derivation-Function'
+name: Argon2
+cryptoClass: Key-Derivation-Function
 commonkeySize: '256'
 specifiedkeySize: {min: '128', max: '512'}

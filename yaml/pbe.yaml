@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
 id: pbe
 name: Password-Based Encryption
-cryptoClass: Symmetric-Key-Algorithm/Key-Derivation
+cryptoClass: Key-Derivation-Function
 commonkeySize: '128'

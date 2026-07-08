@@ -12,6 +12,7 @@ reference:
 parameters:
   operationMode: ['GCM','CCM','CBC','CTR','OFB','CFB','CFB128','CFB1','CFB8','XTS','SIV','GCM-SIV','EAX','OCB','CTS','CWC','IAPM','LRW','XEX','CMC','EME','HCTR2','CMAC','GMAC','PCBC','ECB','CTR-HMAC-SHA1','Wrap','XCBC_MAC','XCBC_MAC_96']
   keyLength: [128, 192, 256]
-  nonce_length: { min: '1', max: '2305843009213693951' }
-  tagLength: { min: '4', max: '16' }
+  nonce_length: {min: '1', max: '18446744073709551615'}
+  tagLength: {min: '32', max: '128'}
   padding: ["PKCS7", "ISO10126" ,"ANSI_X9.23" , "ISO7816_4"  ,"NONE"]
+  ivLength: {min: '1', max: '2305843009213693951'}

@@ -26,6 +26,6 @@ reference:
 ```
 ---
 
-* All the properties are described on the SPDX Cryptographic Algorithms List [properties description file](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-description.md).
+* Algorithm's properties and parameters are described on the SPDX Cryptographic Algorithms List [Properties and Parameters Description file](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-parameters-description.md).
 * All the algorithms from the SPDX Cryptographic Algorithm List are included in the [yaml folder](https://github.com/spdx/cryptographic-algorithm-list/tree/main/yaml).
    * For each algorithm you will find a .yaml file, with the name <id>.yaml , where <id> is the SPDX identifier for the corresponding cryptographic algorithm

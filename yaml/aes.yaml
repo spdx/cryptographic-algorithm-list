@@ -9,3 +9,6 @@ reference:
   - https://doi.org/10.6028/NIST.FIPS.197-upd1
   - https://doi.org/10.6028/NIST.SP.800-38A
   - https://www.iso.org/standard/81564.html
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','CTR','XTS','GCM','CCM','SIV','GCM-SIV','EAX','OCB','CTS','CWC','IAPM','LRW','XEX','CMC','EME','HCTR2','CMAC','GMAC','PMAC','IGE','FF1','FF3','FF3-1','KW','KWP','XCBC_MAC','XCBC_MAC_96']
+  keyLength: ['128','192','256']

@@ -8,3 +8,6 @@ specifiedkeySize: '128'
 reference:
   - https://doi.org/10.17487/RFC2144
   - https://tnlandforms.us/cs594-cns96/cast.pdf
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','CTR']
+  keyLength: {min: '40', max: '128'}

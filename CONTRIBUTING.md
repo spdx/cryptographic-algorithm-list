@@ -17,12 +17,16 @@ This is an example of how an algorithm from the SPDX Cryptographic Algorithm Lis
 id: scale
 oid: 1.5.21.171.3.6.8
 name: SPDX Cryptographic Algorithm List Example
-cryptoClass: Symmetric-Key-Algorithm/Encoding
+cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: ['256', '512']
 specifiedkeySize: {min: '128', max: '256'}
 reference:
   - https://doi.org/10.17487/RFC2144
   - https://tnlandforms.us/cs594-cns96/cast.pdf
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','GCM-SIV','EAX','OCB','CTS','CWC','IAPM','LRW','XCBC_MAC','XCBC_MAC_96']
+  keyLength: ['192','256']
+
 ```
 ---
 
@@ -42,7 +46,7 @@ The issue must include, at minimum:
 
 - The proposed SPDX CryptAlg identifier (`id`) for the algorithm.
 - The full name of the algorithm.
-- The proposed `cryptoClass` and subclass.
+- The proposed `cryptoClass` and `cryptoSubClass`.
 - A brief justification explaining:
    - why the algorithm meets the inclusion criteria, with reference to the relevant key additional factors described in the [Cryptographic Algorithm Inclusion and Removal Criteria](docs/cryptographic-algorithm-inclusion-removal-criteria.md) document.
    - if the proposal is related to or the result of decisions, modifications or updates on algorithms approved within standardization bodies or pushed by the algorithm authors
@@ -74,7 +78,7 @@ Submissions that do not conform to the schema, or where the corresponding issue 
 
 The pull request is reviewed by the Cryptography Group following the standard review process. At least one group member other than the author must approve the pull request before it can be merged. Any group member with merge rights may merge the pull request once the review conditions are satisfied.
 
-Once merged, the algorithm entry will be included in the next scheduled release, provided it is merged before the data freeze date defined in section 3.1 of the [release process](/DOCS/spdx-cyptographic-algorithm-list-release-process.md].
+Once merged, the algorithm entry will be included in the next scheduled release, provided it is merged before the data freeze date defined in section 3.1 of the [release process](/docs/spdx-cyptographic-algorithm-list-release-process.md].
 
 ### Proposing a Correction to an Existing Entry
 
@@ -98,12 +102,12 @@ Removal must be documented in the release notes of the release in which it occur
 
 ## Relationship Between the Proposal Process and the Release Cycle
 
-The proposal process described in this section — issue, discussion, consensus, pull request, review, merge — is independent of the release cadence. An algorithm entry may be proposed and discussed at any time. What the release cadence governs is when a merged change becomes part of a published release: any pull request merged before the data freeze date defined in section 3.1 of the [release process](/DOCS/spdx-cyptographic-algorithm-list-release-process.md] will be included in that month's release. Pull requests merged after the freeze will be included in the following release, except in those extraordinary cases described in the release process.
+The proposal process described in this section — issue, discussion, consensus, pull request, review, merge — is independent of the release cadence. An algorithm entry may be proposed and discussed at any time. What the release cadence governs is when a merged change becomes part of a published release: any pull request merged before the data freeze date defined in section 3.1 of the [release process](/docs/spdx-cyptographic-algorithm-list-release-process.md] will be included in that month's release. Pull requests merged after the freeze will be included in the following release, except in those extraordinary cases described in the release process.
 
 ---
 
 ## About the List
 
-* Algorithm's properties and parameters are described on the SPDX Cryptographic Algorithms List [Properties and Parameters Description file](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-parameters-description.md).
-* All the algorithms from the SPDX Cryptographic Algorithm List are included in the [yaml folder](https://github.com/spdx/cryptographic-algorithm-list/tree/main/yaml).
-   * For each algorithm you will find a .yaml file, with the name <id>.yaml , where <id> is the SPDX identifier for the corresponding cryptographic algorithm
+* Algorithm's properties and parameters taxonomy is described on the SPDX Cryptographic Algorithms List [Properties and Parameters Description file](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-parameters-description.md).
+* Every algorithms from the SPDX Cryptographic Algorithm List is included in the [yaml folder](https://github.com/spdx/cryptographic-algorithm-list/tree/main/yaml).
+   * For each algorithm you will find a .yaml file, with the file name "<id>.yaml" , where <id> is the SPDX identifier for the corresponding cryptographic algorithm

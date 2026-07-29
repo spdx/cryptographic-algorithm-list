@@ -8,3 +8,6 @@ specifiedkeySize: '168'
 reference:
   - https://doi.org/10.17487/RFC1851
   - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-67r2.pdf
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','CTR']
+  keyLength: '168'

@@ -8,3 +8,6 @@ specifiedkeySize: {min: '128', max: '256'}
 reference:
   - https://doi.org/10.17487/RFC3713
   - https://www.iso.org/standard/54531.html
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','CTR','GCM','CCM']
+  keyLength: ['128','192','256']

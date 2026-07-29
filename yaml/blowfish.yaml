@@ -8,3 +8,6 @@ specifiedkeySize: {min: '128', max: '448'}
 reference:
   - https://doi.org/10.1007/3-540-58108-1_24
   - https://www.schneier.com/academic/archives/1994/09/description_of_a_new.html
+parameters:
+  operationMode: ['ECB','CBC','CFB','OFB','CTR']
+  keyLength: {min: '32', max: '448'}

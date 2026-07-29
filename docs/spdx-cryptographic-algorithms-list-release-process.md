@@ -62,7 +62,7 @@ This release policy applies to the following:
 - Algorithm entries in the working repository, including new additions, corrections, and removals.
 - Property descriptions and any changes to the structure of the list.
 - The JSON output published in the data repository at each release.
-- The documentation that accompanies the list, such as the contributing guide and the properties description file.
+- The documentation that accompanies the list, such as the contributing guide and the [Properties and Parameters Description](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-parameters-description.md) file.
 
 ---
 
@@ -113,7 +113,7 @@ The website is built with [MkDocs](https://www.mkdocs.org/) using a theme provid
 The website contains the following pages:
 
 - **Home page** — An introductory description of the SPDX Cryptographic Algorithm List and its purpose, including a browsable table of all algorithms showing their full name, short identifier (`id`), and cryptographic class (`cryptoClass`).
-- **Properties Description** — An explanation of all properties used in the `.yaml` files, corresponding to the properties description document maintained in the working repository.
+- **Properties and Parameters Description** — An explanation of all properties and properties used in the `.yaml` files, corresponding to the [Properties and Parameters Description](https://github.com/spdx/cryptographic-algorithm-list/tree/main/docs/crypto-algorithms-list-properties-parameters-description.md) document maintained in the working repository.
 - **Algorithm Inclusion Principles** — The criteria the Cryptography Group uses to evaluate whether an algorithm is eligible for inclusion in the list.
 - **Contributing** — Guidance for contributors on how to propose new algorithms, report errors, and participate in the review process.
 - **Individual algorithm pages** — A dedicated page for each algorithm in the list, accessible at a predictable URL based on the algorithm identifier (e.g., `https://spdx.github.io/cryptographic-algorithm-list/3des.htm`). Each page presents the full set of properties for that algorithm.
@@ -437,7 +437,7 @@ SPDX Cryptographic Algorithm List has two equivalent and complementary sources o
 
 At each release, the cryptalg-parser reads the .yaml files in the yaml/ folder of the working repository and produces two categories of output:
 * JSON files, published in the data repository (cryptographic-algorithm-list-data). These are the machine-readable artifacts intended for downstream tools and integrators. The JSON output follows the JSON schema used across the SPDX ecosystem, ensuring that the list can be consumed directly by tools that already support the SPDX format without requiring changes to their data handling. No other machine-readable formats — such as XML or CSV — are produced at this stage.
-* Static web pages, used by MkDocs to generate the website. These present the content of the list in a human-readable form, including individual pages for each algorithm entry and supporting pages for properties descriptions, inclusion principles, and contributing guidance. The website is deployed automatically by GitHub Actions on each release and is never edited by hand.
+* Static web pages, used by MkDocs to generate the website. These present the content of the list in a human-readable form, including individual pages for each algorithm entry and supporting pages for properties and parameters descriptions, inclusion principles, and contributing guidance. The website is deployed automatically by GitHub Actions on each release and is never edited by hand.
 
 The working repository also contains, at the tagged release version, the same content as the data repository — in .yaml format. This allows any consumer who needs the source representation, rather than the generated output, to find it in the working repository at the corresponding tag.
 
@@ -522,7 +522,7 @@ Website
 Documents in the SPDX CryptAlg working repository
 * The SPDX Cryptographic Algorithms List [Release Process](docs/release-process.md) describes the release policy and procedures
 * The [Algorithm Inclusion and Removal Principles](docs/algorithm-inclusion-principles.md) document describes the criteria that the Cryptography Group follows to evaluate and approve or reject the any submitted proposal to add or remove a cryptographic algorithm to the List
-* The [Properties Description](crypto-algorithms-list-properties-description.md) document describes all the properties that characterize a cryptographic algorithm included on the List as well as their values
+* The [Properties and Parameters Description](docs/crypto-algorithms-list-properties-parameters-description.md) document describes all the properties that characterize a cryptographic algorithm included on the List as well as their values
 * The contribution to the List guidelines are summarised in the [Contributing Guide](CONTRIBUTING.md).
 * The [RELEASE-HISTORY](RELEASE-HISTORY.md) document is a compact Markdown table maintained in the root of the working repository, listing all published releases in reverse chronological order with their shortened version string and release date.
 * The Release Notes or [Changelog](CHANGELOG.md) contains the full release notes for every published version in reverse chronological order.

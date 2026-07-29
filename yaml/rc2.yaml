@@ -4,3 +4,6 @@ oid: 1.2.840.113549.3.2
 name:  Rivest Cipher 2
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '128'
+parameters:
+  operationMode: ['ECB','CBC']
+  keyLength: {min: '8', max: '1024'}

@@ -88,13 +88,10 @@ Notes:
 
 ## Cryptographic Algorithms parameters description
 
-### parameterName
-
-* Description: The set of valid values depends on the algorithm's cryptoClass / cryptoSubClass. Each parameter have a different structure so their description is specific to each one of them
-* Cardinality: [0..*]
-* Values:
-   * Enumeration: "operationMode", "padding", "paddingScheme", "digestFunction", "variant", "construction", "pseudorandomFunction", "group", "curve", "pointCompression", "polynomial", "underlyingCipher"
-    * Numeric: "nonceLength", "ivLength", "tagLength", "keyLength", "outputLength", "saltLength", "modulusLength", "pPrimeLength", "qPrimeLength", "publicExponent", "iterations", "memoryCost", "parallelism", "costFactor", "rounds", "dropBytes"
+* Parameter Names: the set of valid parameters depends on the algorithm's cryptoClass / cryptoSubClass. Each parameter has a different name and structure so their description is specific to each one of them
+   * Values:
+      * Enumeration: "operationMode", "padding", "paddingScheme", "digestFunction", "variant", "construction", "pseudorandomFunction", "group", "curve", "pointCompression", "polynomial", "underlyingCipher"
+      * Numeric: "nonceLength", "ivLength", "tagLength", "keyLength", "outputLength", "saltLength", "modulusLength", "pPrimeLength", "qPrimeLength", "publicExponent", "iterations", "memoryCost", "parallelism", "costFactor", "rounds", "dropBytes"
 
 ### operationMode
 

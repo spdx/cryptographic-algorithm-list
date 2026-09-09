@@ -1,0 +1,9 @@
+id: faest
+name: FAEST
+cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
+pqcClass: MPC-in-the-Head
+specifiedkeySize: ['128','192','256']
+reference:
+  - https://csrc.nist.gov/projects/pqc-dig-sig/round-3-additional-signatures
+  - https://csrc.nist.gov/csrc/media/Projects/pqc-dig-sig/documents/round-2/spec-files/faest-spec-round2-web.pdf
+  - https://faest.info/

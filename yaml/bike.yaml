@@ -1,0 +1,8 @@
+id: bike
+name: Bit Flipping Key Encapsulation
+cryptoClass: Asymmetric-Key-Algorithm
+pqcClass: Code-Based
+specifiedkeySize: ['128','192','256']
+reference:
+  - https://csrc.nist.gov/Projects/post-quantum-cryptography
+  - https://bikesuite.org/

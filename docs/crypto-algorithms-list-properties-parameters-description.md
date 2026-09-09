@@ -74,6 +74,18 @@ Notes:
 1. the subclasses has been added to the cryptoClass property, separated by a "/" character from the class. This specific way to structure the subclasses is WIP.
 2. cryptoSubClass values are currently WIP
 
+#### pqcClass
+
+* Description: the mathematical family whose hard problem provides the security of a post-quantum cryptographic algorithm. This property is orthogonal to cryptoClass and cryptoSubClass. Its marks the  algorithm as post-quantum. Its absence means the algorithm is not post-quantum.
+* Cardinality: [0..1]
+* Values:
+  * "Lattice-Based": Security based on hard lattice problems, such as Learning With Errors, Ring-LWE and Module-LWE, or NTRU lattices.
+  * "Code-Based": Security based on the hardness of decoding random linear error-correcting codes, such as Goppa codes or quasi-cyclic codes.
+  * "Multivariate": Security based on the difficulty of solving systems of multivariate quadratic equations over finite fields.
+  * "Hash-Based":  Security based on the properties of cryptographic hash functions, such as preimage and collision resistance.  Includes stateful and stateless schemes.
+  * "Isogeny-Based": Security based on the difficulty of finding isogenies between elliptic curves.
+  * "MPC-in-the-Head": Signatures built with the "MPC-in-the-Head" or zero-knowledge proof paradigm.
+
 ### reference
 
 * Description: A link or reference to the authoritative publication, standard, or technical specification that formally defines the cryptographic algorithm. This resource MUST provide details on the algorithm's mathematical basis, rationale, intended applications, and implementation considerations.

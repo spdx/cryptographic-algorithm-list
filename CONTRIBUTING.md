@@ -76,7 +76,7 @@ Submissions that do not conform to the schema, or where the corresponding issue 
 
 #### Step 4 — Review and merge
 
-The pull request is reviewed by the Cryptography Group following the standard review process. At least one group member other than the author must approve the pull request before it can be merged. Any group member with merge rights may merge the pull request once the review conditions are satisfied.
+The pull request is reviewed by the Cryptography Group following the standard review process. At least one group member with merge rights other than the author must approve the pull request before it can be merged. Any group member with merge rights may merge the pull request once the review conditions are satisfied.
 
 Once merged, the algorithm entry will be included in the next scheduled release, provided it is merged before the data freeze date defined in section 3.1 of the [release process](/docs/spdx-cyptographic-algorithm-list-release-process.md].
 

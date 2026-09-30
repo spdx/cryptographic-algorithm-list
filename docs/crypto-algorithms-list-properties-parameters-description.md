@@ -76,7 +76,7 @@ Notes:
 
 #### pqcClass
 
-* Description: the mathematical family whose hard problem provides the security of a post-quantum cryptographic algorithm. This property is orthogonal to cryptoClass and cryptoSubClass. Its marks the  algorithm as post-quantum. Its absence means the algorithm is not post-quantum.
+* Description: the mathematical family whose hard problem provides the security of a post-quantum cryptographic algorithm. This property is orthogonal to cryptoClass and cryptoSubClass. Its marks the algorithm as post-quantum. Its absence means the algorithm is not post-quantum.
 * Cardinality: [0..1]
 * Values:
   * "Lattice-Based": Security based on hard lattice problems, such as Learning With Errors, Ring-LWE and Module-LWE, or NTRU lattices.

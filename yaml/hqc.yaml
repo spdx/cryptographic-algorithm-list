@@ -1,0 +1,8 @@
+id: hqc
+name: Hamming Quasi-Cyclic
+cryptoClass: Asymmetric-Key-Algorithm
+pqcClass: Code-Based
+specifiedkeySize: ['128','192','256']
+reference:
+  - https://csrc.nist.gov/Projects/post-quantum-cryptography
+  - https://pqc-hqc.org/

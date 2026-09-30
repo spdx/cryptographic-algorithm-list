@@ -1,0 +1,8 @@
+id: mayo
+name: MAYO
+cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
+pqcClass: Multivariate
+specifiedkeySize: ['128','192','256']
+reference:
+  - https://csrc.nist.gov/projects/pqc-dig-sig/round-3-additional-signatures
+  - https://pqmayo.org/

@@ -1,5 +1,5 @@
-# SPDX-License-Identifier: CC0-1.0
 id: ntruencrypt
 name: N-th degree TRuncated polynomial Ring Units
 cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
+pqcClass: Lattice-Based
 commonkeySize: '128'

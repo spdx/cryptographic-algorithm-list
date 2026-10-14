@@ -55,6 +55,33 @@
 #### cryptoSubClass
 
 * Description: each class of algorithms is categorised in subclasses.
+   * Cryptographic Hash Function
+     * Hash Function: A function that transforms input data of any length into a fixed-size output, with collision and preimage resistance as core properties.
+     * Password Hashing: A hash function construction with deliberately high computational or memory cost, typically incorporating a salt.
+     * Checksum: A fixed-size value computed from input data, without the collision resistance of a cryptographic hash function.
+  * Symmetric Key Algorithm
+     * Block Cipher: A symmetric-key algorithm operating on fixed-size blocks, using the same key for encryption and decryption.
+     * Stream Cipher: A symmetric-key algorithm built around a pseudorandom keystream, combined with plaintext bit by bit or byte by byte.
+     * Encoding: A symmetric-key transformation without a cipher's diffusion and collision properties.
+  * Asymmetric Key Algorithm
+     * Public Key Encryption: An asymmetric-key scheme combining a public-key primitive with a padding or randomization mechanism.
+     * Public Key Cipher: The raw asymmetric-key mathematical primitive, without an added padding or randomization scheme.
+     * Elliptic Curve Cryptography: An asymmetric-key algorithm structured around point arithmetic over an elliptic curve group.
+     * Digital Signature: An asymmetric-key algorithm pairing a private-key signing operation with a public-key verification operation.
+     * Protocol: A defined sequence of asymmetric-key operations exchanged between parties, rather than a single-step algorithm.
+     * Hybrid Cipher: An asymmetric-key construction combining a public-key operation with a symmetric-key algorithm.
+     * Key Exchange Mechanism: An asymmetric-key construction based on an interactive exchange of public values between two parties.
+     * Key Encapsulation Mechanism: An asymmetric-key construction pairing a public-key encapsulation operation with a private-key decapsulation operation.
+  * Message Authentication Code (MAC)
+     * Hash Based MAC: MAC constructed using a cryptographic hash function as the underlying primitive.
+     * Block Cipher MAC: MAC constructed using a block cipher as the underlying primitive.
+     * Polynomial MAC: MAC constructed from polynomial evaluation over a finite field, keyed via a stream or block cipher.
+  * Key Derivation Function (KDF)
+     * Password Based: KDF that derives keys from a password or passphrase, using a salt and an intentionally slow or memory-hard computation.
+     * Key Based: KDF that derives keys from existing cryptographic keying material, such as a master secret, shared secret, or session key, rather than a password.
+  * Random Number Generator
+     * True Random Number Generator (TRNG): An algorithm that derives randomness from a physical entropy source, such as hardware noise, ring oscillators, thermal effects, or quantum sources, and is not seed-reproducible.
+     * Deterministic Random Bit Generator (DRBG): A deterministic, seed-based algorithm that produces cryptographically secure pseudo-random output.
 * Cardinality: [0..1]
 * Values:
    * cryptoClass "Cryptographic-Hash-Function"
@@ -62,13 +89,13 @@
   * cryptoClass "Symmetric-Key-Algorithm"
      * cryptoSubClass values: "Block-Cipher" , "Stream-Cipher" or "Encoding"
   * cryptoClass "Asymmetric-Key-Algorithm"
-     * cryptoSubClass values: "Public-Key-Encryption" , "Public-Key-Cipher" , "Elliptic-Curve-Cryptography" , "Digital-Signature" , "Protocol", "Hybrid-Cipher" or "Key-Exchange-Mechanism"
+     * cryptoSubClass values: "Public-Key-Encryption" , "Public-Key-Cipher" , "Elliptic-Curve-Cryptography" , "Digital-Signature" , "Protocol" , "Hybrid-Cipher" , "Key-Exchange-Mechanism" or "Key-Encapsulation-Mechanism"
   * cryptoClass "Message-Authentication-Code"
-     * cryptoSubClass values:
+     * cryptoSubClass values: "Hash-Based-MAC" , "Block-Cipher-MAC" or "Polynomial-MAC"
   * cryptoClass "Key-Derivation-Function"
-     * cryptoSubClass values:
+     * cryptoSubClass values: "Password-Based" or "Key-Based"
   * cryptoClass "Random-Number-Generator"
-     * cryptoSubClass values:
+     * cryptoSubClass values: "TRNG" or "DRBG"
 
 Notes:
 1. the subclasses has been added to the cryptoClass property, separated by a "/" character from the class. This specific way to structure the subclasses is WIP.

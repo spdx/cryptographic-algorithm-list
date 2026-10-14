@@ -1,0 +1,8 @@
+id: ml-dsa
+name: ML-DSA (Module-Lattice-Based Digital Signature Algorithm)
+cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
+pqcClass: Lattice-Based
+specifiedkeySize: ['128','192','256']
+reference:
+  - https://csrc.nist.gov/pubs/fips/204/final
+  - https://pq-crystals.org/dilithium/

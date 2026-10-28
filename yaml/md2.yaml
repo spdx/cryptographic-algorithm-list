@@ -1,4 +1,3 @@
-# SPDX-License-Identifier: CC0-1.0
 id: md2
 name: Message-Digest Algorithm 2
 cryptoClass: Cryptographic-Hash-Function/Hash-Function

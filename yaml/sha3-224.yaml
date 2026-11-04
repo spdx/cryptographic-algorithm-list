@@ -1,5 +1,5 @@
 id: SHA3-224
-oid: '2.16.840.1.101.3.4.2.7'
+oid: 2.16.840.1.101.3.4.2.7
 name: SHA3-224 (Secure Hash Algorithm 3 224)
 cryptoClass: Cryptographic-Hash-Function/Hash-Function
 commonkeySize: ['224']

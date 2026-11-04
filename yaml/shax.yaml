@@ -1,0 +1,5 @@
+id: shax
+name: SHA-x (SHA-1, SHA-256, etc.)
+cryptoClass: Cryptographic-Hash-Function/Hash-Function
+commonkeySize: ['128','512']
+specifiedkeySize: {min: '224', max: '512'}

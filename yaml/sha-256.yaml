@@ -1,0 +1,8 @@
+id: SHA-256
+oid: '2.16.840.1.101.3.4.2.1'
+name: SHA-256 (Secure Hash Algorithm 256)
+cryptoClass: Cryptographic-Hash-Function/Hash-Function
+commonkeySize: ['256']
+specifiedkeySize: {min: '256', max: '256'}
+reference: 
+  - https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf

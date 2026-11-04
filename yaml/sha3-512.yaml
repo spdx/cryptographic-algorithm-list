@@ -1,0 +1,8 @@
+id: SHA3-512
+oid: '2.16.840.1.101.3.4.2.10'
+name: SHA3-512 (Secure Hash Algorithm 3 512)
+cryptoClass: Cryptographic-Hash-Function/Hash-Function
+commonkeySize: ['512']
+specifiedkeySize: {min: '512', max: '512'}
+reference: 
+  - https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf

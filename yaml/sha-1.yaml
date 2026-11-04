@@ -1,0 +1,8 @@
+id: SHA-1
+oid: '1.3.14.3.2.26'
+name: SHA-1 (Secure Hash Algorithm 1)
+cryptoClass: Cryptographic-Hash-Function/Hash-Function
+commonkeySize: ['160']
+specifiedkeySize: {min: '160', max: '160'}
+reference: 
+  - https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf

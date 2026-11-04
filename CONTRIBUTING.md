@@ -13,7 +13,6 @@ This is an example of how an algorithm from the SPDX Cryptographic Algorithm Lis
 
 ---
 ```
-# SPDX-License-Identifier: CC0-1.0
 id: scale
 oid: 1.5.21.171.3.6.8
 name: SPDX Cryptographic Algorithm List Example

@@ -5,4 +5,3 @@ pqcClass: Code-Based
 specifiedkeySize: ['128','192','256']
 reference:
   - https://classic.mceliece.org/
-  - https://datatracker.ietf.org/doc/draft-josefsson-mceliece/

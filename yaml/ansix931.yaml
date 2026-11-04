@@ -1,4 +1,4 @@
 # SPDX-License-Identifier: CC0-1.0
 id: 'ansix931'
 name: 'ANSI X9.31'
-cryptoClass: 'Protocol-Standard'
+cryptoClass: 'Asymmetric-Key-Algorithm/Digital-Signature'

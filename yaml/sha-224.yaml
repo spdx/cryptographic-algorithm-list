@@ -1,0 +1,8 @@
+id: SHA-224
+oid: 2.16.840.1.101.3.4.2.4
+name: SHA-224 (Secure Hash Algorithm 224)
+cryptoClass: Cryptographic-Hash-Function/Hash-Function
+commonkeySize: ['224']
+specifiedkeySize: {min: '224', max: '224'}
+reference: 
+  - https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.180-4.pdf

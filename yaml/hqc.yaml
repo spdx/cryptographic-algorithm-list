@@ -1,6 +1,6 @@
 id: hqc
 name: Hamming Quasi-Cyclic
-cryptoClass: Asymmetric-Key-Algorithm
+cryptoClass: Asymmetric-Key-Algorithm/Key-Encapsulation-Mechanism
 pqcClass: Code-Based
 specifiedkeySize: ['128','192','256']
 reference:

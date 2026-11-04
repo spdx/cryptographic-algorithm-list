@@ -1,5 +1,5 @@
 id: mceliece
 name: McEliece Cryptosystem
-cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
+cryptoClass: Asymmetric-Key-Algorithm/Key-Encapsulation-Mechanism
 pqcClass: Code-Based
 commonkeySize: '64'

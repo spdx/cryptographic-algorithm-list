@@ -7,8 +7,7 @@ specifiedkeySize: '256'
 reference:
   - https://doi.org/10.17487/RFC8891
 grammarExpressionReference:
- - [1, keyLength]
- - [2, operationMode]
+ - [1, operationMode]
 parameters:
   operationMode: ['ECB','CFB','CTR','CBC']
   keyLength: '256'

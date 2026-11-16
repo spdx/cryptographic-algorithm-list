@@ -4,6 +4,9 @@ name: Rivest Cipher 5
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '128'
 specifiedkeySize: '128'
+grammarExpressionReference:
+ - [1, keyLength]
+ - [2, operationMode]
 parameters:
   operationMode: ['ECB','CBC','CTS']
   keyLength: {min: '0', max: '2040'}

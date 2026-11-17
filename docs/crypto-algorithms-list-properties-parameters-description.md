@@ -154,8 +154,42 @@ Notes:
 
 * Parameter Names: the set of valid parameters depends on the algorithm's cryptoClass / cryptoSubClass. Each parameter has a different name and structure so their description is specific to each one of them
    * Values:
-      * Enumeration: "operationMode", "padding", "paddingScheme", "digestFunction", "variant", "construction", "pseudorandomFunction", "group", "curve", "pointCompression", "polynomial", "underlyingCipher"
+      * Enumeration: "operationMode", "padding", "paddingScheme", "digestFunction", "variant", "construction", "pseudorandomFunction", "group", "curve", "pointCompression", "polynomial", "underlyingCipher" ,"hashFunction", "nonceGeneration" 
       * Numeric: "nonceLength", "ivLength", "tagLength", "keyLength", "outputLength", "saltLength", "modulusLength", "pPrimeLength", "qPrimeLength", "publicExponent", "iterations", "memoryCost", "parallelism", "costFactor", "rounds", "dropBytes"
+
+### curve
+
+* Description: The elliptic curve domain parameters used by an asymmetric-key algorithm (e.g., ECDSA, ECDH). Curves define the finite field, base point, and group order that determine the cryptographic security and performance.
+   * P-224: NIST 224-bit Prime Field Weierstrass Curve (secp224r1)  NIST SP 800-186
+   * P-256: NIST 256-bit Prime Field Weierstrass Curve (secp256r1 / prime256v1) NIST SP 800-186
+   * P-384: NIST 384-bit Prime Field Weierstrass Curve (secp384r1) NIST SP 800-186
+   * P-521: NIST 521-bit Prime Field Weierstrass Curve (secp521r1) NIST SP 800-186
+   * B-233: NIST 233-bit Binary Field Weierstrass Curve (sect233r1) NIST SP 800-186
+   * B-283: NIST 283-bit Binary Field Weierstrass Curve (sect283r1) NIST SP 800-186
+   * B-409: NIST 409-bit Binary Field Weierstrass Curve (sect409r1) NIST SP 800-186
+   * B-571: NIST 571-bit Binary Field Weierstrass Curve (sect571r1) NIST SP 800-186
+   * K-233: NIST 233-bit Binary Field Koblitz Curve (sect233k1) NIST SP 800-186
+   * K-283: NIST 283-bit Binary Field Koblitz Curve (sect283k1) NIST SP 800-186
+   * K-409: NIST 409-bit Binary Field Koblitz Curve (sect409k1) NIST SP 800-186
+   * K-571: NIST 571-bit Binary Field Koblitz Curve (sect571k1) NIST SP 800-186 
+   * secp256k1: SECG 256-bit Prime Field Koblitz Curve SEC 2 v2.0: https://secg.org
+   * Curve25519: Montgomery Curve over Prime Field $2^{255}-19$ (used for X25519 key agreement) RFC 7748
+   * Ed25519: Twisted Edwards Curve over Prime Field $2^{255}-19$ (birationally equivalent to Curve25519, used for EdDSA signatures) RFC 8032
+   * Curve448: Montgomery Curve over Prime Field $2^{448}-2^{224}-1$ (Curve448-Goldilocks, used for X448 key agreement) RFC 7748 NIST SP 800-186
+   * Ed448: Twisted Edwards Curve over Prime Field $2^{448}-2^{224}-1$ (birationally equivalent to Curve448, used for EdDSA signatures) RFC 8032
+
+Values:
+   * Values: "P-224", "P-256", "P-384", "P-521", "B-233", "B-283", "B-409", "B-571", "K-233", "K-283", "K-409", "K-571", "secp256k1", "Curve25519", "Ed25519", "Curve448", "Ed448"
+
+### hashFunction
+
+* Description: The cryptographic hash function used as a building block in the algorithm. For digital signatures, the hash function computes a fixed-length digest of the message before signing; for key derivation, it provides the required entropy expansion or mixing. The choice of hash function must be aligned with the algorithm’s security requirements.
+*  Values: "SHA-224", "SHA-256", "SHA-384", "SHA-512", "SHA-512/224", "SHA-512/256", "SHA3-224", "SHA3-256", "SHA3-384", "SHA3-512", "BLAKE2", "SHAKE128", "SHAKE256".
+
+### nonceGeneration
+
+* Description: The method used to generate the nonce (or ephemeral random value) required by the algorithm. 
+* Values: "Random" or "Deterministic".
 
 ### operationMode
 

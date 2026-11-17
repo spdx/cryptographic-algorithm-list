@@ -54,7 +54,7 @@ An SPDX CryptographicAlgorithm List Short Form Identifier. For example: AES or R
 An SPDX CryptographicAlgorithm List Short Form Identifier with appended parameters or parameter sets. This represents explicit constraints placed on a block cipher size, hashing digest size, or block mode. For example: AES-128 or AES-128-[GCM|CCM]. A `-*` parameter segment denotes a wildcard for a single unspecified parameter segment at the corresponding position. It indicates that any explicitly specified parameter segments are satisfied, while the parameter value at the `-*` position is unspecified. For example, `AES-[128|256]-*` denotes AES with the first AES parameter, `keyLength`, constrained to either `128` or `256`, and the next AES parameter segment, `operationMode`, left unspecified. Trailing unspecified parameter segments are considered to be wildcards.
 An SPDX user-defined external cryptographic algorithm reference: [%s"DocumentRef-" idstring ":"] %s"CryptographicAlgorithmRef-" idstring.
 
-##Structural Reference Examples
+## Structural Reference Examples
 
 `3DES`
 `AES-[128|256]-*`

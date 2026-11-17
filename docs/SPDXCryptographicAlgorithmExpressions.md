@@ -26,28 +26,28 @@ and-expression = factor *( " AND " factor )
 factor = CryptographicAlgorithmName / "(" expression ")"
 ```
 
-##Expression Formatting Rules
+## Expression Formatting Rules
 
 A valid <expression> string consists of either:
 A simple cryptographic algorithm expression, such as a standalone algorithm identifier or parametrized identifier.
 A composite expression constructed by combining smaller valid algorithm expressions using Boolean operators.
 
-##Whitespace and Layout Constraints
+## Whitespace and Layout Constraints
 
 There MUST be white space and/or parentheses on either side of the operators AND and OR.
 In the tag:value format, a cryptographic algorithm expression MUST be on a single line, and MUST NOT include a line break in the middle of the expression.
 
-##Case Sensitivity
+## Case Sensitivity
 
-###Operators
+### Operators
 
 Cryptographic algorithm expression operators (AND, OR) should be matched in a case-sensitive manner. This means letters must be all upper case to be considered syntactically valid by a processing engine.
 
-###Identifiers and Parameters
+### Identifiers and Parameters
 
 Cryptographic identifiers (including base names pulled from the SPDX CryptographicAlgorithm List) used in SPDX documents or configurations should be matched in a case-sensitive manner.
 
-##Simple Cryptographic Algorithm Expressions
+## Simple Cryptographic Algorithm Expressions
 
 A simple cryptographic algorithm expression is composed of one of the following variations:
 An SPDX CryptographicAlgorithm List Short Form Identifier. For example: AES or RSA.
@@ -61,14 +61,14 @@ An SPDX user-defined external cryptographic algorithm reference: [%s"DocumentRef
 `DocumentRef-ExternalSpec.2026:CryptographicAlgorithmRef-CustomCipher`
 The current set of valid short-form cryptographic identifiers and their exact grammatical positions can be found in the official registry at spdx.org/cryptographic-algorithm-list.
 
-##Composite Cryptographic Algorithm Expressions
+## Composite Cryptographic Algorithm Expressions
 
-###Introduction
+### Introduction
 
 More expressive composite cryptographic algorithm expressions can be constructed using OR and AND operators, which behave similarly to mapping mathematical terms via arithmetic expressions.
 For the tag:value format, any cryptographic expression consisting of more than one algorithm identifier and/or external reference may optionally be encapsulated by wrapping parentheses: ( ). Nested parentheses are also explicitly used to override standard evaluation hierarchies to specify a strict order of precedence.
 
-###Disjunctive "OR" Operator
+### Disjunctive "OR" Operator
 
 If a system presents an alternative choice or optional fallback between two or more cryptographic algorithms, use the disjunctive binary OR operator to bind them. Both the left and right operands must resolve to valid cryptographic expression values.
 Example: When a specification permits either `AES-256-GCM` or `ChaCha20`, the valid expression string is:
@@ -77,7 +77,7 @@ Properties: The OR operator is commutative. The expression above is considered l
 `ChaCha20` OR `AES-256-GCM`
 Chaining: Choices can be expanded across multiple criteria sequentially (e.g., `AES-128 OR AES-256 OR ChaCha20`).
 
-###Conjunctive "AND" Operator
+### Conjunctive "AND" Operator
 
 If a profile requires simultaneous compliance or support for two or more cryptographic primitives, use the conjunctive binary AND operator to combine them. Both the left and right operands must be valid independent cryptographic expressions.
 Example: When a target architecture is forced to utilize an asymmetric signature algorithm alongside a symmetric encryption block, a valid expression string is:
@@ -86,14 +86,14 @@ Properties: The AND operator is commutative. The expression above is considered 
 `AES-256-GCM AND RSA-4096`
 Chaining: Requirements can be chained concurrently across multiple algorithmic domains (e.g., `RSA-4096 AND ECDH-p256 AND SHA-256`). 
 
-###Order of Precedence and Parentheses
+### Order of Precedence and Parentheses
 
-####Introduction
+#### Introduction
 
 When multiple operators (AND, OR) are combined within a single cryptographic algorithm expression without parentheses, a parser must evaluate the expression according to a strict order of precedence. This ensures that the same composite expression string resolves to the exact same cryptographic requirement profile across different compliance tools and parsing engines.
 The evaluation order follows standard Boolean algebra logic, prioritizing conjunctive requirements over alternative selections.
 
-####Order of Operations
+#### Order of Operations
 
 Cryptographic algorithm expressions are evaluated in the following order of precedence, from highest priority to lowest:
 Parentheses ( ): Any sub-expression enclosed in parentheses MUST be evaluated first, regardless of the operators surrounding it.
@@ -102,9 +102,9 @@ Disjunctive OR: Alternative selection grouping has the lowest evaluation priorit
 Operators with the same precedence level are evaluated from left to right.
 It is best practice for readability and to prevent logical ambiguity, explicitly wrap sub-expressions in parentheses whenever AND and OR operators are mixed within the same expression. 
 
-####Precedence Examples and Logic Mapping
+#### Precedence Examples and Logic Mapping
 
-#####Case 1: Standard Evaluation Hierarchy
+##### Case 1: Standard Evaluation Hierarchy
 
 Consider the following expression without explicit parentheses:
 `AES-256-GCM AND SHA-256` OR `ChaCha20`
@@ -112,14 +112,14 @@ Because AND has higher precedence than OR, this expression parses as if it were 
 `(AES-256-GCM AND SHA-256) OR ChaCha20`
 Compliance Profile Interpretation: A system is compliant if it supports both `AES-256-GCM` and `SHA-256`, OR if it supports `ChaCha20` standalone.
 
-#####Case 2: Overriding Precedence with Parentheses
+##### Case 2: Overriding Precedence with Parentheses
 
 If a specification intends to require a hash function paired with either of two ciphers, parentheses must be explicitly used to override the default order of operations:
 `AES-256-GCM AND (SHA-256 OR SHA-512)`
 Compliance Profile Interpretation: A system must support `AES-256-GCM` in all scenarios, alongside at least one of the hashing primitives (`SHA-256` or `SHA-512`).
 Writing this without parentheses (`AES-256-GCM AND SHA-256 OR SHA-512`) would change the meaning entirely, misinterpreting it as matching either the AES-256-GCM AND SHA-256 pair, or SHA-512 by itself.
 
-#####Strict Nesting Constraints
+##### Strict Nesting Constraints
 
 Spaces MUST separate outer operators from parentheses boundaries. For example, `AES-128 AND(SHA-256 OR SHA-512)` is syntactically invalid. It must be written as `AES-128 AND (SHA-256 OR SHA-512)`.
 Redundant nesting (e.g., `((AES-256-GCM)) or (RSA))` is syntactically valid but discouraged for readability.

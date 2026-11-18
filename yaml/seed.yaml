@@ -4,6 +4,8 @@ name: SEED Block Cipher
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '256'
 specifiedkeySize: {min: '128', max: '256'}
+grammarExpressionReference:
+ - [1, operationMode]
 parameters:
   operationMode: ['ECB','CBC','CFB','OFB','CTR']
   keyLength: '128'

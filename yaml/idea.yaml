@@ -4,6 +4,8 @@ name: International Data Encryption Algorithm
 cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
 commonkeySize: '64'
 specifiedkeySize: '128'
+grammarExpressionReference:
+ - [1, operationMode]
 parameters:
   operationMode: ['ECB','CBC','CFB','OFB']
   keyLength: '128'

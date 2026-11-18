@@ -22,6 +22,9 @@ specifiedkeySize: {min: '128', max: '256'}
 reference:
   - https://doi.org/10.17487/RFC2144
   - https://tnlandforms.us/cs594-cns96/cast.pdf
+grammarExpressionReference:
+ - [1, keyLength]
+ - [2, operationMode]
 parameters:
   operationMode: ['ECB','CBC','CFB','OFB','GCM-SIV','EAX','OCB','CTS','CWC','IAPM','LRW','XCBC_MAC','XCBC_MAC_96']
   keyLength: ['192','256']

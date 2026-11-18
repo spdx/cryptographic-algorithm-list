@@ -125,6 +125,24 @@ Notes:
       * Next priority: Any other authoritative, publicly accessible and free of charge document that provide the required detail about the algorithm.
       * Additional references (optional): Any other authoritative documents that provide the required detail about the algorithm.
 
+### grammarExpressionReference
+
+* Description: Maps the positions of parameter values in a Cryptographic Algorithm Expression to parameter names for this algorithm. Each entry assigns a position number to a parameter name. A parameter value at position N after the algorithm identifier is interpreted as the value of the parameter assigned to position N.
+* Applicability: Required when parameters or parameter sets may be appended to the algorithm identifier in a Cryptographic Algorithm Expression. If this mapping is absent or empty, the algorithm identifier MUST NOT be followed by parameters in the expression.
+* Cardinality: [0..*]
+* Values: A list of position-to-parameter entries. Each entry MUST have the form
+   * [position, parameter-name]
+ where:
+   * position is a positive integer representing the 1-based position of the parameter value in a Cryptographic Algorithm Expression.
+   * parameter-name is one of the parameter names defined for this algorithm in the parameters description.
+ * Value rules:
+   * Position numbers MUST start at 1.
+   * Position numbers MUST increase by 1 without gaps. 
+   * Position numbers MUST NOT be duplicated.
+   * The parameter-name MUST correspond to a parameter defined for that algorithm.
+   * Entries SHOULD be listed in ascending position order for readability.
+   * The mapping is determined by the position number, not by the order of the text lines themselves.
+
 ## Cryptographic Algorithms parameters description
 
 * Parameter Names: the set of valid parameters depends on the algorithm's cryptoClass / cryptoSubClass. Each parameter has a different name and structure so their description is specific to each one of them

@@ -1,7 +1,8 @@
 id: cast
 oid: 1.2.840.113533.7.66.10
 name: Carlisle Adams and Stafford Tavares
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '320'
 specifiedkeySize: '128'
 reference:

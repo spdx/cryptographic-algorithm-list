@@ -1,5 +1,6 @@
 id: dhe
 name: Diffie-Hellman Ephemeral
-cryptoClass: Asymmetric-Key-Algorithm/Key-Exchange-Mechanism
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Key-Exchange-Mechanism
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '4096'}

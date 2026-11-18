@@ -1,4 +1,5 @@
 id: f8
 name: F8 Confidentiality Mode (F8 Mode)
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher
 commonkeySize: '128'

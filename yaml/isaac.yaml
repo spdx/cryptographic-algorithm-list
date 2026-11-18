@@ -1,4 +1,5 @@
 id: isaac
 name: ISAAC Random Number Generator
-cryptoClass: Random-Number-Generator/DRBG
+cryptoClass: Random-Number-Generator
+cryptoSubClass: DRBG
 commonkeySize: '256'

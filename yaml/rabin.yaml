@@ -1,5 +1,6 @@
 id: rabin
 name: Rabin Encryption Algorithm
-cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Public-Key-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '1024', max: '2048'}

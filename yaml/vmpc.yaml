@@ -1,3 +1,4 @@
 id: vmpc
 name: VMPC Stream Cipher
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher

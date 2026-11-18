@@ -1,7 +1,8 @@
 id: camellia
 oid: 1.2.392.200011.61.1.1.1
 name: Camellia Cipher
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '256'
 specifiedkeySize: {min: '128', max: '256'}
 reference:

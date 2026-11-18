@@ -1,5 +1,6 @@
 id: 'adler32'
 name: 'Adler-32'
-cryptoClass: 'Cryptographic-Hash-Function/Hash-Function'
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '32'
 specifiedkeySize: '32'

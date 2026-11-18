@@ -1,6 +1,7 @@
 id: rc4
 oid: 1.2.840.113549.3.4
 name: Rivest Cipher 4
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher
 commonkeySize: '2048'
 specifiedkeySize: {min: '128', max: '2048'}

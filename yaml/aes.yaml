@@ -1,7 +1,8 @@
 id: aes
 oid: 2.16.840.1.101.3.4.1
 name: Advanced Encryption Standard
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '256'
 specifiedkeySize: {min: '128', max: '256'}
 reference:

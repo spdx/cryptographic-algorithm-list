@@ -1,5 +1,6 @@
 id: md5
 name: Message-Digest Algorithm 5
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '128'
 specifiedkeySize: '128'

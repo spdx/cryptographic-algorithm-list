@@ -1,7 +1,8 @@
 id: elgamal
 oid: 1.3.14.7.2.1.1
 name: ElGamal Encryption System
-cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Public-Key-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '4096'}
 reference:

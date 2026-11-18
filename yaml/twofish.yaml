@@ -1,7 +1,8 @@
 id: twofish
 oid: 
 name: Twofish Block Cipher
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '64'
 specifiedkeySize: {min: '128', max: '256'}
 parameters:

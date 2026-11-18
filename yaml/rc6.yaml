@@ -1,7 +1,8 @@
 id: rc6
 oid: 
 name: Rivest Cipher 6
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '128', max: '256'}
 parameters:

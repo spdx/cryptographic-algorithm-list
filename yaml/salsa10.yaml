@@ -1,4 +1,5 @@
 id: salsa10
 name: Salsa10 Stream Cipher
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher
 commonkeySize: '64'

@@ -1,5 +1,6 @@
 id: whirlpool
 name: Whirlpool Hash Function
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '128'
 specifiedkeySize: '512'

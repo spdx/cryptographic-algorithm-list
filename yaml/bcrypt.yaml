@@ -1,6 +1,7 @@
 id: bcrypt
 name: OpenBSD Blowfish password hashing scheme
-cryptoClass: Cryptographic-Hash-Function/Password-Hashing
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Password-Hashing
 commonkeySize: '320'
 reference:
   - https://www.usenix.org/legacy/events/usenix99/provos/provos.pdf

@@ -1,4 +1,5 @@
 id: cms
 name: Cryptographic Message Syntax
-cryptoClass: Asymmetric-Key-Algorithm/Protocol
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Protocol
 commonkeySize: '64'

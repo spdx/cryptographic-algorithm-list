@@ -1,6 +1,7 @@
 id: rsa
 oid: 1.2.840.113549.1.1.1
 name: Rivest–Shamir–Adleman Algorithm
-cryptoClass: Asymmetric-Key-Algorithm/Public-Key-Cipher
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Public-Key-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '4096'}

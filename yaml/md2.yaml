@@ -1,4 +1,5 @@
 id: md2
 name: Message-Digest Algorithm 2
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '256'

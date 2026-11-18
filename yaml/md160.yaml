@@ -1,5 +1,6 @@
 id: md160
 name: RACE Integrity Primitives Evaluation Message Digest)
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '64'
 specifiedkeySize: '160'

@@ -1,4 +1,5 @@
 id: gea0-x
 name: GPRS Encryption Algorithm version 0
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher
 commonkeySize: {min: '64', max: '128'}

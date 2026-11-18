@@ -1,7 +1,8 @@
 id: ecdh
 oid: 1.3.132.1.12
 name: Elliptic-Curve Diffie-Hellman
-cryptoClass: Asymmetric-Key-Algorithm/Key-Exchange-Mechanism
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Key-Exchange-Mechanism
 commonkeySize: '128'
 specifiedkeySize: {min: '256', max: '521'}
 reference:

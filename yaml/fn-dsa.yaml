@@ -1,6 +1,7 @@
 id: fn-dsa
 name: FN-DSA. Falcon
-cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Digital-Signature
 pqcClass: Lattice-Based
 specifiedkeySize: ['128','256']
 reference:

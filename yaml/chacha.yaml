@@ -1,6 +1,7 @@
 id: chacha
 name: ChaCha Stream Cipher
-cryptoClass: Symmetric-Key-Algorithm/Stream-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Stream-Cipher
 commonkeySize: '256'
 specifiedkeySize: '256'
 reference:

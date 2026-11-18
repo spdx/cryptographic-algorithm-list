@@ -1,6 +1,7 @@
 id: fortuna
 name: Fortuna Random Number Generator
-cryptoClass: Random-Number-Generator/DRBG
+cryptoClass: Random-Number-Generator
+cryptoSubClass: DRBG
 commonkeySize: '64'
 reference:
   - https://www.schneier.com/wp-content/uploads/2015/12/fortuna.pdf 

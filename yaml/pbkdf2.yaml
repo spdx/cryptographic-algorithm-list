@@ -1,5 +1,6 @@
 id: pbkdf2
 oid: 1.2.840.113549.1.5.12
 name: Password-Based Key Derivation Function 2
-cryptoClass: Key-Derivation-Function/Password-Based
+cryptoClass: Key-Derivation-Function
+cryptoSubClass: Password-Based
 commonkeySize: '128'

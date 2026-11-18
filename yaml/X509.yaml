@@ -1,4 +1,5 @@
 id: X509
 name: ITU-T Recommendation X.509 - Public Key Infrastructure Certificate Framework
-cryptoClass: Asymmetric-Key-Algorithm/Protocol
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Protocol
 commonkeySize: '128'

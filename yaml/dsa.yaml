@@ -1,7 +1,8 @@
 id: dsa
 oid: 1.2.840.10040.4.1
 name: Digital Signature Algorithm
-cryptoClass: Asymmetric-Key-Algorithm/Digital-Signature
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Digital-Signature
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '3072'}
 reference:

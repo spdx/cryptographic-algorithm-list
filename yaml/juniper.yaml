@@ -1,3 +1,4 @@
 id: juniper
 name: Juniper Ciphe
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher

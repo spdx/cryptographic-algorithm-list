@@ -1,7 +1,8 @@
 id: gostr3412-2015
 oid: 1.2.643.7.1.1.5.1
 name: Magma
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '64'
 specifiedkeySize: '256'
 reference:

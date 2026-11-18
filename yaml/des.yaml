@@ -1,7 +1,8 @@
 id: des
 oid: 1.3.14.3.2.7
 name: Data Encryption Standard
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '168'
 specifiedkeySize: '56'
 reference:

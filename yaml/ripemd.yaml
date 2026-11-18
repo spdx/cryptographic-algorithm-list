@@ -1,5 +1,6 @@
 id: ripemd
 oid: 1.3.36.3.2.1
 name: RIPEMD Hash Function
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '128'

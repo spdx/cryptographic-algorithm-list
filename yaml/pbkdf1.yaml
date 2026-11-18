@@ -1,4 +1,5 @@
 id: pbkdf1
 name: Password-Based Key Derivation Function 1
-cryptoClass: Key-Derivation-Function/Password-Based
+cryptoClass: Key-Derivation-Function
+cryptoSubClass: Password-Based
 commonkeySize: '128'

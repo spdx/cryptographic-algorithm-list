@@ -1,4 +1,5 @@
 id: pbe
 name: Password-Based Encryption
-cryptoClass: Key-Derivation-Function/Password-Based
+cryptoClass: Key-Derivation-Function
+cryptoSubClass: Password-Based
 commonkeySize: '128'

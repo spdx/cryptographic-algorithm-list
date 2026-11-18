@@ -98,8 +98,7 @@
      * cryptoSubClass values: "TRNG" or "DRBG"
 
 Notes:
-1. the subclasses has been added to the cryptoClass property, separated by a "/" character from the class. This specific way to structure the subclasses is WIP.
-2. cryptoSubClass values are currently WIP
+1. cryptoSubClass values are currently WIP
 
 #### pqcClass
 

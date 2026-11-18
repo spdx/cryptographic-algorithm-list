@@ -1,6 +1,7 @@
 id: 'blake3'
 name: 'BLAKE3'
-cryptoClass: 'Cryptographic-Hash-Function/Hash-Function'
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '256'
 specifiedkeySize: '256'
 reference:

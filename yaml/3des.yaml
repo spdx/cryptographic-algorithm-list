@@ -1,7 +1,8 @@
 id: 3des
 oid: 1.2.840.113549.3.7
 name: Triple Data Encryption Standard
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '128'
 specifiedkeySize: '168'
 reference:

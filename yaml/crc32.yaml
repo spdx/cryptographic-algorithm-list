@@ -1,4 +1,5 @@
 id: crc32
 name:  Cyclic Redundancy Check 32-bit
-cryptoClass: Cryptographic-Hash-Function/Checksum
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Checksum
 commonkeySize: '32'

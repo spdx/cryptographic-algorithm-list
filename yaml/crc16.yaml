@@ -1,4 +1,5 @@
 id: crc16
 name:  Cyclic Redundancy Check 16-bit
-cryptoClass: Cryptographic-Hash-Function/Checksum
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Checksum
 commonkeySize: '16'

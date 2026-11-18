@@ -1,7 +1,8 @@
 id: idea
 oid: 1.3.6.1.4.1.188.7.1.1.2
 name: International Data Encryption Algorithm
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '64'
 specifiedkeySize: '128'
 parameters:

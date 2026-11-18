@@ -1,5 +1,6 @@
 id: pkcs12
 oid: 1.2.840.113549.1.12
 name: Public Key Cryptography Standards 12
-cryptoClass: Asymmetric-Key-Algorithm/Protocol
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Protocol
 commonkeySize: '128'

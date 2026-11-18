@@ -1,6 +1,7 @@
 id: argon2
 oid: 
 name: Argon2
-cryptoClass: Key-Derivation-Function/Password-Based
+cryptoClass: Key-Derivation-Function
+cryptoSubClass: Password-Based
 commonkeySize: '256'
 specifiedkeySize: {min: '128', max: '512'}

@@ -1,3 +1,4 @@
 id: 'ansix942'
 name: 'ANSI X9.42'
-cryptoClass: 'Asymmetric-Key-Algorithm/Key-Exchange-Mechanism'
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Key-Exchange-Mechanism

@@ -1,5 +1,6 @@
 id: tiger
 name: Tiger Hash Function
-cryptoClass: Cryptographic-Hash-Function/Hash-Function
+cryptoClass: Cryptographic-Hash-Function
+cryptoSubClass: Hash-Function
 commonkeySize: '256'
 specifiedkeySize: '192'

@@ -1,5 +1,6 @@
 id: dhies
 name: Diffie-Hellman Integrated Encryption Scheme
-cryptoClass: Asymmetric-Key-Algorithm/Hybrid-Cipher
+cryptoClass: Asymmetric-Key-Algorithm
+cryptoSubClass: Hybrid-Cipher
 commonkeySize: '128'
 specifiedkeySize: {min: '2048', max: '4096'}

@@ -1,4 +1,5 @@
 id: nimbus
 name: Nimbus Cipher
-cryptoClass: Symmetric-Key-Algorithm/Block-Cipher
+cryptoClass: Symmetric-Key-Algorithm
+cryptoSubClass: Block-Cipher
 commonkeySize: '256'

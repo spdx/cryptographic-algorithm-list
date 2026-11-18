@@ -1,4 +1,5 @@
 id: pbes1
 name: Password-Based Encryption Scheme 1
-cryptoClass: Key-Derivation-Function/Password-Based
+cryptoClass: Key-Derivation-Function
+cryptoSubClass: Password-Based
 commonkeySize: '128'

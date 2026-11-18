@@ -143,13 +143,6 @@ Notes:
    * Entries SHOULD be listed in ascending position order for readability.
    * The mapping is determined by the position number, not by the order of the text lines themselves.
 
-    Examples:
-
-    For AES, the grammar expression parameter order may be defined as:
-    grammarExpressionReference:
-      - [1, keyLength]
-      - [2, operationMode]
-
 ## Cryptographic Algorithms parameters description
 
 * Parameter Names: the set of valid parameters depends on the algorithm's cryptoClass / cryptoSubClass. Each parameter has a different name and structure so their description is specific to each one of them

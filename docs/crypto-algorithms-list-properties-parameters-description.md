@@ -97,9 +97,6 @@
   * cryptoClass "Random-Number-Generator"
      * cryptoSubClass values: "TRNG" or "DRBG"
 
-Notes:
-1. cryptoSubClass values are currently WIP
-
 #### pqcClass
 
 * Description: the mathematical family whose hard problem provides the security of a post-quantum cryptographic algorithm. This property is orthogonal to cryptoClass and cryptoSubClass. Its marks the algorithm as post-quantum. Its absence means the algorithm is not post-quantum.
